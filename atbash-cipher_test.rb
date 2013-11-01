@@ -16,12 +16,10 @@ class AtbashTest < MiniTest::Unit::TestCase
   end
 
   def test_encode_O_M_G
-    skip
     assert_equal 'lnt', Atbash.encode('O M G')
   end
 
   def test_encode_long_word
-    skip
     assert_equal 'nrmwy oldrm tob', Atbash.encode('mindblowingly')
   end
 
