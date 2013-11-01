@@ -28,12 +28,10 @@ class AtbashTest < MiniTest::Unit::TestCase
   end
 
   def test_encode_sentence
-    skip
     assert_equal 'gifgs rhurx grlm', Atbash.encode('Truth is fiction.')
   end
 
   def test_encode_all_the_things
-    skip
     plaintext = 'The quick brown fox jumps over the lazy dog.'
     cipher = 'gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt'
     assert_equal cipher, Atbash.encode(plaintext)
